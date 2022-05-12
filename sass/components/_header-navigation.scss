@@ -4,18 +4,28 @@
 
     &__list {
         position: relative;
-        display: flex;
-        margin-left: 93px;
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            margin-left: 88px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+        }
     }
 }
 
-
-
 .nav__link {
-    display: block;
+    display: none;
     padding: 32px 0;
     color: $secondaryTextColor;
     transition: color $transition;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
 
     &--current {
         position: relative;
@@ -26,7 +36,7 @@
         position: absolute;
         left: 0;
         bottom: -1px;
-    
+
         display: inline-block;
         content: '';
         width: 100%;
