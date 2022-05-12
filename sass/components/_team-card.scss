@@ -1,23 +1,22 @@
-.team {
+.team__card {
+    padding-top: 30px;
+    padding-bottom: 24px;
+    // padding-bottom: 30px;
+}
 
-    &__card {
-        padding: 30px;
-    }
-    
-    &__caption {
-        color: $secondaryTextColor;
-        margin-bottom: 10px;
-    
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-    }
-    
-    &__text {
-        font-size: 16px;
-        line-height: 1.19;
-        text-align: center;
-        margin-bottom: 16px;
-    }
+.team__caption {
+    color: $secondaryTextColor;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team__text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 16px;
 }
