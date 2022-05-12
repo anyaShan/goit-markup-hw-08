@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
+    padding: 16px 32px;
+    // width: 170px;
+    // height: 92px;
     border: $borderIcon;
     border-radius: 4px;
     transition: border $transition;
@@ -25,4 +26,3 @@
         fill: $accentColor;
     }
 }
-

@@ -1,8 +1,18 @@
 .section {
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
+
 
     &__title {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
+
         color: $secondaryTextColor;
 
         font-weight: 700;
