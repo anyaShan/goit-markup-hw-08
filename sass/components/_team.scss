@@ -1,14 +1,40 @@
 .team {
-    display: flex;
-    
-    &__item {
-        max-width: 270px;
-        border-radius: 0px 0px 4px 4px;
-        background-color: $bgPrimaryColor;
-        box-shadow: $boxShadow;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-wrap: wrap;
+        margin-right: -30px;
+        margin-bottom: -30px;
+    }
+
+}
+
+.team__item {
+    max-width: 100%;
+    border-radius: 0px 0px 4px 4px;
+    background-color: $bgPrimaryColor;
+    box-shadow: $boxShadow;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc(100% / 2 - 30px);
+        margin-right: 30px;
+
+    }
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
 
         &:not(:last-child) {
             margin-right: 30px;
         }
     }
+
+
 }
