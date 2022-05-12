@@ -1,19 +1,14 @@
 
-// .specifics {
-//     display: flex;
-// }
+.specifics {
+    display: flex;
+}
 
 .specifics__item {
-    max-width: 100%;
-    // max-width: 270px;
+    max-width: 270px;
 
     &:not(:last-child) {
-            margin-bottom: 30px;
-        }
-    
-    // &:not(:last-child) {
-    //     margin-right: 30px;
-    // }
+        margin-right: 30px;
+    }
 }
 
 .specifics__box {

@@ -1,12 +1,7 @@
 .clients {
-    display: flex;
-    flex-wrap: wrap;
-        margin-right: -30px;
-        margin-bottom: -30px;
-
-    &__item {
-            width: calc(100% / 2 - 30px);
-            margin-right: 30px;
-            margin-bottom: 30px;
-        }
+        display: flex;
+    
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
 }

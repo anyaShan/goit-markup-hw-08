@@ -1,26 +1,26 @@
-// .contacts {
-//     display: flex;
-//     margin-left: auto;
+.contacts {
+    display: flex;
+    margin-left: auto;
 
-//     &__item:not(:last-child) {
-//         margin-right: 50px;
-//     }
-// }
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+}
 
 
 
-// .contacts__link {
-//     display: flex;
-//     padding: 32px 0;
-//     align-items: center;
-//     color: $primaryTextColor;
-//     transition: color $transition;
+.contacts__link {
+    display: flex;
+    padding: 32px 0;
+    align-items: center;
+    color: $primaryTextColor;
+    transition: color $transition;
 
-//     &:hover,
-//     &:focus {
-//         color: $accentColor;
-//     }
-// }
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
 
 
 
