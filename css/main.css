@@ -285,14 +285,39 @@ img {
 }
 
 .specifics {
-  display: flex;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .specifics {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
 }
 
-.specifics__item {
-  max-width: 270px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .specifics__item {
+    width: calc(50% - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
-.specifics__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .specifics__item {
+    max-width: 270px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .specifics__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specifics__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .specifics__box {
