@@ -708,12 +708,33 @@ img {
 }
 
 .buttons {
-  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
 }
+@media screen and (max-width: 767px) {
+  .buttons {
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .buttons {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .buttons {
+    margin-bottom: 50px;
+  }
+}
+
 .buttons__item:not(:last-child) {
   margin-right: 8px;
+}
+@media screen and (max-width: 767px) {
+  .buttons__item {
+    margin-bottom: 15px;
+  }
 }
 
 .works__list {
