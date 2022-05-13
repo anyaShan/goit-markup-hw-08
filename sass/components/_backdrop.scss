@@ -9,6 +9,7 @@
 
     opacity: 1;
     transition: opacity $transition, visibility $transition;
+    overflow: scroll;
 
     &.is-hidden {
         visibility: hidden;

@@ -1,0 +1,21 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    padding: 48px 0;
+
+    background-color: yellowgreen;
+    // background-color: $bgPrimaryColor;
+
+    .menu__conteiner {
+        padding: 0 40px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        overflow: scroll;
+    }
+}
