@@ -1,20 +1,35 @@
 .modal {
     position: absolute;
-    top: 50%;
+    top: 93px;
     left: 50%;
-
-    min-width: 528px;
-    min-height: 581px;
     padding: 40px;
 
     border-radius: 4px;
     background-color: $bgPrimaryColor;
     box-shadow: $boxShadow;
 
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%) scale(1);
     transition: transform $transition;
 
-    .backdrop.is-hidden + & {
+    @media screen and (max-width: 479px) {
+        width: 95vw;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
+
+
+    .backdrop.is-hidden+& {
         transform: translate(-50%, -50%) scale(1.1);
     }
 }
