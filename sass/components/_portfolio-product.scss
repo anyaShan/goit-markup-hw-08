@@ -1,5 +1,7 @@
 .product {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow $transition;
 
     &:hover,
@@ -17,23 +19,24 @@
         font-size: 18px;
         line-height: 1.56;
     }
-    
+
     &__name {
+        flex-grow: 1;
         border: $borderSecondary;
         border-top: none;
         padding: 20px 24px;
     }
-    
+
     &__caption {
         color: $secondaryTextColor;
         margin-bottom: 4px;
-    
+
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
     }
-    
+
     &__text {
         color: $primaryTextColor;
         font-style: normal;
@@ -63,10 +66,3 @@
         opacity: 1;
     }
 }
-
-
-
-
-
-
-
