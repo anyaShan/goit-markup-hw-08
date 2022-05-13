@@ -5,17 +5,30 @@
     width: 100vw;
     height: 100vh;
     z-index: 5;
-    padding: 48px 0;
 
-    background-color: yellowgreen;
-    // background-color: $bgPrimaryColor;
+    background-color: $bgPrimaryColor;
+    transform: scale(1);
+    transition: transform $transition, visibility $transition, opacity $transition;
+
+    &.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+
+        transform: scale(0.8);
+    }
 
     &__conteiner {
-        padding: 0 40px;
+        position: relative;
+        padding: 48px 40px;
         display: flex;
         flex-direction: column;
         height: 100%;
         justify-content: space-between;
         overflow: scroll;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
     }
 }
