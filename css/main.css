@@ -1202,26 +1202,38 @@ img {
 }
 
 .policy {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   margin-bottom: 30px;
 }
 .policy__label {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   cursor: pointer;
 }
 .policy__text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
+}
+@media screen and (min-width: 1200px) {
+  .policy__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .policy__link {
   margin-left: 3px;
   color: #2196f3;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+@media screen and (min-width: 1200px) {
+  .policy__link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox {
