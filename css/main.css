@@ -318,6 +318,13 @@ img {
     padding: 94px 0;
   }
 }
+.section--padding {
+  padding-top: 0;
+}
+.section--background {
+  background-color: #f5f4fa;
+}
+
 .section__title {
   margin-bottom: 30px;
   color: #212121;
@@ -332,15 +339,14 @@ img {
     font-size: 36px;
     line-height: 1.17;
   }
-  .section__title.visually-hidden {
-    visibility: hidden;
+}
+.section__title--hidden {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section__title--hidden {
+    display: block;
   }
-}
-.section--padding {
-  padding-top: 0;
-}
-.section--background {
-  background-color: #f5f4fa;
 }
 
 @media screen and (min-width: 768px) {
