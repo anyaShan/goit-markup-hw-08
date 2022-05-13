@@ -13,4 +13,9 @@
     &--current {
         color: $accentColor;
     }
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
 }
