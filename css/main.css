@@ -824,6 +824,11 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 @media screen and (max-width: 1199px) {
+  .mailing__input:focus {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+@media screen and (max-width: 1199px) {
   .mailing__input {
     margin-bottom: 20px;
   }
