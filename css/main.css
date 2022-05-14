@@ -456,6 +456,12 @@ img {
   background-color: #f5f4fa;
 }
 
+@media screen and (max-width: 1199px) {
+  .section.section--padding {
+    padding: 0;
+  }
+}
+
 .section__title {
   margin-bottom: 30px;
   color: #212121;
