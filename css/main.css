@@ -1215,6 +1215,11 @@ img {
   font-size: 12px;
   line-height: 1.16;
 }
+@media screen and (min-width: 480px) {
+  .policy__text {
+    flex-shrink: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .policy__text {
     font-size: 14px;
