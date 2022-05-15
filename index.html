@@ -260,12 +260,34 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team list">
             <li class="team__item">
-              <img
-                src="./images/team-card-1.jpg"
-                alt="Мужчина в очках с бородой в коричневой рубашке"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-card-1/desk-team-card-1/desk-team-card-1.jpg 1x,
+                    ./images/team/team-card-1/desk-team-card-1/desk-team-card-1.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-card-1/tablet-team-card-1/tablet-team-card-1.jpg 1x,
+                    ./images/team/team-card-1/tablet-team-card-1/tablet-team-card-1.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-card-1/mob-team-card-1/mob-team-card-1.jpg 1x,
+                    ./images/team/team-card-1/mob-team-card-1/mob-team-card-1.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/team/team-card-1/mob-team-card-1/mob-team-card-1.jpg"
+                  alt="Мужчина в очках с бородой в коричневой рубашке"
+                />
+              </picture>
+
               <div class="team__card">
                 <h3 class="team__caption">Игорь Демьяненко</h3>
                 <p lang="en" class="team__text">Product Designer</p>
