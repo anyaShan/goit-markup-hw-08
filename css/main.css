@@ -924,24 +924,26 @@ img {
   .works__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
-.works__item {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .works__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .works__item {
     width: calc(50% - 30px);
-    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .works__item {
     width: calc(33.3333333333% - 30px);
-    margin-right: 30px;
   }
 }
 
