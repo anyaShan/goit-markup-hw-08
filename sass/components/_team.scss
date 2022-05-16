@@ -13,17 +13,22 @@
 }
 
 .team__item {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     max-width: 100%;
     border-radius: 0px 0px 4px 4px;
     background-color: $bgPrimaryColor;
     box-shadow: $boxShadow;
 
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: calc(100% / 2 - 30px);
         margin-left: 30px;
         margin-top: 30px;
-        margin-bottom: 0;
     }
 
 
