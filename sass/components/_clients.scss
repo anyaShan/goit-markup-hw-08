@@ -12,7 +12,12 @@
 
 .clients__item {
     max-width: 100%;
-    margin-bottom: 30px;
+
+    @media screen and (max-width: 479px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
 
     @media screen and (min-width: 480px) and (max-width: 767px) {
         width: calc(100% / 2 - 30px);

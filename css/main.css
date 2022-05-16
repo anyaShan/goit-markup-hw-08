@@ -693,7 +693,11 @@ img {
 
 .clients__item {
   max-width: 100%;
-  margin-bottom: 30px;
+}
+@media screen and (max-width: 479px) {
+  .clients__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .clients__item {
