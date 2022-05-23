@@ -745,8 +745,8 @@ img {
 .clients__links {
   display: flex;
   justify-content: center;
+  height: 92px;
   align-items: center;
-  padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
