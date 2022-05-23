@@ -594,6 +594,11 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
 }
+@media screen and (max-width: 767px) {
+  .specifics__caption {
+    text-align: center;
+  }
+}
 
 .specifics__text {
   font-size: 14px;
