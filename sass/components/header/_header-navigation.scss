@@ -35,7 +35,12 @@
     &--current::after {
         position: absolute;
         left: 0;
-        bottom: -1px;
+        bottom: 2px;
+
+        @media screen and (min-width: 1200px) {
+            bottom: 0;
+        }
+
 
         display: inline-block;
         content: '';
